@@ -1,1 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSH US Resource Hub</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f4f7f6;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+            text-align: center;
+        }
 
+        header {
+            padding: 20px 0;
+            border-bottom: 2px solid #b20000;
+            margin-bottom: 30px;
+        }
+
+        h1 { color: #b20000; }
+
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        .category-card {
+            background: white;
+            padding: 20px;
+            border-radius: 12px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            transition: transform 0.2s;
+        }
+
+        .category-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .btn {
+            display: block;
+            width: 100%;
+            padding: 12px 0;
+            margin: 10px 0;
+            background-color: #b20000;
+            color: white;
+            text-decoration: none;
+            border-radius: 6px;
+            font-weight: bold;
+        }
+
+        .btn:hover { background-color: #b20000; }
+
+        .notice-banner {
+            background-color: #fff3cd;
+            padding: 10px;
+            border: 1px solid #ffeeba;
+            margin-bottom: 20px;
+            border-radius: 8px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>CSH US Resource Hub</h1>
+        <p>Your all-in-one stop for student life [cite: 1]</p>
+    </header>
+
+    <div class="notice-banner">
+        <strong>Daily Notices:</strong> Check here for tech issues or news.
+    </div>
+
+    <div class="grid-container">
+        
+        <section class="category-card">
+            <h2>Lunch & Dining</h2>
+            <a href="lunch-menu.html" class="btn">Lunch Menu & Ratings</a>
+            <a href="lunch-suggestions.html" class="btn">Suggest New Foods</a>
+            <p><small>Check line length & dessert status</small></p>
+        </section>
+
+        <section class="category-card">
+            <h2>Library</h2>
+            <a href="library-resources.html" class="btn">Sora & Databases</a>
+            <a href="library-status.html" class="btn">Hours & Availability</a>
+            <p><small>Current Crowd Level: Moderate</small></p>
+        </section>
+
+        <section class="category-card">
+            <h2>Lost & Found</h2>
+            <a href="report-lost.html" class="btn">Report Lost Item</a>
+            <a href="found-items.html" class="btn">View Found Log</a>
+        </section>
+
+        <section class="category-card">
+            <h2>Student Life</h2>
+            <a href="studentlife-tutoring.html" class="btn">Peer Tutoring</a>
+            <a href="studentlife-events.html" class="btn">Club & Sports Events</a>
+            <a href="studentlife-teacherpages.html" class="btn">Teacher Meeting Pages</a>
+            <a href="studentlife-pecredit.html" class="btn">PE Credit Sheet</a>
+        </section>
+
+    </div>
+
+    <footer>
+        <p><a href="feedback.html">Submit feature requests here</a> [cite: 28]</p>
+    </footer>
+
+</body>
+</html>
