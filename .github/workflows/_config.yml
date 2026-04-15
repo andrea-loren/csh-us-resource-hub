@@ -1,1 +1,4 @@
-
+title: CSH US Resource Hub
+description: Centralized links for Upper School students
+baseurl: "" # Leave empty if this is your main repository
+url: "" # Your github.io link goes here later
