@@ -3,9 +3,121 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Student Events</title>
+    <title>CSH US events</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f4f7f6;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+            text-align: center;
+        }
+
+        header {
+            padding: 20px 0;
+            border-bottom: 2px solid #b20000;
+            margin-bottom: 30px;
+        }
+
+        h1 { color: #b20000; }
+
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        .category-card {
+            background: white;
+            padding: 20px;
+            border-radius: 12px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            transition: transform 0.2s;
+        }
+
+        .category-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .btn {
+            display: block;
+            width: 100%;
+            padding: 12px 0;
+            margin: 10px 0;
+            background-color: #b20000;
+            color: white;
+            text-decoration: none;
+            border-radius: 6px;
+            font-weight: bold;
+        }
+
+        .btn:hover { background-color: #b20000; }
+
+        .notice-banner {
+            background-color: #fff3cd;
+            padding: 10px;
+            border: 1px solid #ffeeba;
+            margin-bottom: 20px;
+            border-radius: 8px;
+        }
+    </style>
 </head>
 <body>
-    <h1>Hello everyone these are the student events heh</h1>
+
+    <header>
+        <h1>CSH US Events</h1>
+        <p><small>R means thursday btw</small></p>
+    </header>
+    <h1>Sports practices and games</h1>
+    <div class="grid-container">
+        
+        <section class="category-card">
+            <h2>Track</h2>
+            <p><small>See full team schedule <a href="https://www.cshnyc.org/athletics/teams-and-schedules/team-profile/~athletics-team-id/146">HERE</a></small></p>
+            <p>May 6 2026 3:30 AAIS Meet #4
+            May 15 2026 3:30 AAIS Championship
+            May 20 2026 4:00 NYSAIS Championship </p>
+        </section>
+        <section class="category-card">
+            <p>there would be more teams here but all of this information is on the school website so i feel you can just look there the link is up where
+                 it says HERE you can scroll to literally every sports team</p>
+        </section>
+    </div>
+
+    <h1>Service events</h1>
+    <div class="grid-container">
+        <section class="category-card">
+            <h2>this one</h2>
+            <p>Month day, year <b>location</b></p>
+            <p>some information about this service event that is happening</p>
+        </section>
+        <section class="category-card">
+            <h2>Anoter event</h2>
+           <p>this is quite the event</p>
+           <p>February 30, 2019 <b>location again</b></p>
+        </section>
+    </div>
+
+    <h1>Club activities</h1>
+    <div class="grid-container">
+        <section class="category-card">
+            <h2>Gaelic Society</h2>
+            <p>What is this club? does it still exist? it's on the website. coding club isn't</p>
+            <p>January 6, 2021 <b>we're learning Gaelic</b></p>
+        </section>
+        <section class="category-card">
+            <h2>Forensics</h2>
+           <p>idk if they passed states. Is that a team thing or a personal thing? huh.</p>
+           <p>February 30, 2019 <b>SUPER IMPORTANT EVENT</b></p>
+        </section>
+    </div>
+
+    <footer>
+        <a href="https://docs.google.com/document/d/1xs4aKzSj6va6lHTXVJr5S0xY3YURZ-MLnAznV39yeuc/edit?usp=sharing" class="btn">Submit an event</a>
+    </footer>
+
 </body>
 </html>
